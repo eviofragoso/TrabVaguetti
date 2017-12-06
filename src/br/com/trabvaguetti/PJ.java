@@ -24,6 +24,12 @@ public class PJ extends Pessoa {
 		this.inscEstadual = inscEstadual;
 	}
 	
-	
-
+	void salvar(){
+	}
+	void excluir(){
+	}
+	void alterar(){	
+	}
+	void listar(){
+	}
 }

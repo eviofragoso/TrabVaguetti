@@ -31,6 +31,12 @@ public class PF extends Pessoa {
 		ERG = eRG;
 	}
 	
-	
-	
+	void salvar(){
+	}
+	void excluir(){
+	}
+	void alterar(){	
+	}
+	void listar(){
+	}
 }
