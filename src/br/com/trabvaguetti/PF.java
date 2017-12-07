@@ -3,8 +3,10 @@ package br.com.trabvaguetti;
 public class PF extends Pessoa {
 	private int id;
 	private String cpf;
-	private String RG;
-	private String ERG;
+	private String rg;
+	private String erg;
+	
+	
 	
 	public int getId() {
 		return id;
@@ -18,19 +20,18 @@ public class PF extends Pessoa {
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
-	public String getRG() {
-		return RG;
+	public String getRg() {
+		return rg;
 	}
-	public void setRG(String rG) {
-		RG = rG;
+	public void setRg(String rg) {
+		this.rg = rg;
 	}
-	public String getERG() {
-		return ERG;
+	public String getErg() {
+		return erg;
 	}
-	public void setERG(String eRG) {
-		ERG = eRG;
+	public void setErg(String erg) {
+		this.erg = erg;
 	}
-	
 	void salvar(){
 	}
 	void excluir(){

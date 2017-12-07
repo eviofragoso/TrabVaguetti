@@ -17,8 +17,6 @@ public class Testar {
 		// PF
 		pf.setId(1);
 		pf.setCpf("000.000.000-00");
-		pf.setRG("00000000");
-		pf.setERG("0000000");
 		
 		pf.salvar();
 		pf.alterar();
