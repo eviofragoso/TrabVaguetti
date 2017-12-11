@@ -12,16 +12,19 @@ public class Testar {
 		pf.setNome("Maxwell"); // Generic
 		pf.setDataNascimento(date); // Generic
 		
-		pf.setEmail("mmmm"); // Pessoa
+		pf.setEmail("mmmm@gmail.com"); // Pessoa
 		
 		// PF
-		pf.setId(1);
-		pf.setCpf("000.000.000-00");
+		pf.setCpf("000");
+		pf.setRg("000");
+		pf.setErg("000");
 		
 		pf.salvar();
 		pf.alterar();
 		pf.excluir();
 		pf.listar();
+		
+		
 		
 	}
 }
