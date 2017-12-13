@@ -13,31 +13,6 @@ public aspect Persistence {
 	pointcut list() : call (* PF.listar(..));
 
 	after(PF p) : save() && target(p){
-		
-		Generic g = new Generic();
-		String sqlx = "select id from generic";
-
-		Connection cons = Conexao.abrirConexao();
-		try {
-			PreparedStatement pst3 = cons.prepareStatement(sqlx);
-//			pst3.getInt(1, p.setId());
-			ResultSet rs = pst3.executeQuery();
-			rs.next();
-			g.setId(rs.getInt("id"));
-			
-			if (pst3.executeUpdate() > 0) {
-				Conexao.fecharConexao(cons);
-				System.out.println("ok");
-			} else {
-				Conexao.fecharConexao(cons);
-				System.out.println("erro");
-			}
-		} catch (SQLException e) {
-			Conexao.fecharConexao(cons);
-			System.out.println(e.getMessage());
-		}
-		
-		
 		//--------------------- INSERIR NA GENERIC ---------------------------//
 		String insertGeneric = "insert into generic (id, nome, datanascimento)";
 		insertGeneric += "values (?,?,?)";
