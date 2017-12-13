@@ -21,7 +21,6 @@ public class Testar {
 		pf.setErg("000");
 		
 //		pf.salvar();
-		
 //		pf.alterar();
 //		pf.excluir();
 		pf.listar();
