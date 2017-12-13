@@ -11,6 +11,7 @@ public class Testar {
 		
 		pf.setNome("Maxwell"); // Generic
 		pf.setDataNascimento(date); // Generic
+		pf.setId(3);
 		
 		pf.setEmail("mmmm@gmail.com"); // Pessoa
 		
